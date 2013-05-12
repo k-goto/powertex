@@ -1,0 +1,361 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote{margin:0;padding:0;}
+fieldset,img{border:0;margin:0;padding:0;}																		
+table{border-spacing:0;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+
+html, body {
+	color:#444;
+	height:100%;
+	margin:0;  
+	padding:0;  
+}  
+
+body {
+	background:url(../img/bg.png);
+}
+
+input,
+textarea {
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+ 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+	
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body,table {
+	font:14px Verdana,sans-serif,"ヒラギノ角ゴ Pro W3"," Hiragino Kaku Gothic Pro", "MS Gothic";
+}
+
+a {
+	color:#222;
+	text-decoration:underline;
+}
+
+a:hover {
+	color:#999;
+}
+
+/* common */
+#header h1 a,
+#naviLink1 a,
+#naviLink2 a,
+#naviLink3 a,
+#naviLink4 a,
+#naviLink5 a,
+#naviLink1 p,
+#naviLink2 p,
+#naviLink3 p,
+#naviLink4 p,
+#naviLink5 p,
+#aboutH2,
+#workshopH2,
+#albumH2,
+#linksH2,
+#topAboutLink a,
+#greetingPhoto {
+	background:url(../img/image.png) no-repeat left top;
+	display:block;
+	text-indent:-9999px;
+}
+
+.inBox {
+	margin:0 auto;
+	width:980px;
+}
+
+#container {  
+    min-height:100%;
+    height:auto !important;
+    height:100%;
+    position:relative;  
+	padding-bottom:40px;
+}  
+
+/*header*/
+#header .inBox {
+	margin:0 auto;
+}
+
+#header h1 a {
+	height:114px;
+	margin-left:14px;
+	position:relative;
+	width:196px;
+	z-index:10;
+}
+
+/*navi*/
+#navi {
+	background:url(../img/navi_bg.png) repeat-x;
+	margin-top:-58px;
+	padding:5px 0;
+	z-index:0;
+}
+
+#navi li a,
+#navi li p {
+	float:right;
+	height:14px;
+	margin-left:28px;
+}
+
+#naviLink1 a,
+#naviLink1 p {
+	background-position:-200px 0;
+	width:137px;
+}
+
+#naviLink2 a,
+#naviLink2 p {
+	background-position:-350px 0;
+	width:54px;
+}
+
+#naviLink3 a,
+#naviLink3 p {
+	background-position:-410px 0;
+	width:85px;
+}
+
+#naviLink4 a,
+#naviLink4 p {
+	background-position:-200px -20px;
+	width:43px;
+}
+
+#naviLink5 a,
+#naviLink5 p {
+	background-position:-260px -20px;
+	width:66px;
+}
+
+#navi li .stay,
+#naviLink1 a:hover,
+#naviLink2 a:hover,
+#naviLink3 a:hover,
+#naviLink4 a:hover,
+#naviLink5 a:hover {
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+
+/*contents*/
+#workshopH2,
+#albumH2,
+#aboutH2,
+#linksH2 {
+	height:182px;
+	margin:14px auto 28px auto;
+	width:980px;
+}
+
+#wrapper {
+	margin:0 auto;
+	text-align:left;
+	padding-bottom:60px;
+}
+
+#wrapper {
+	width:980px;
+}
+
+#wrapper p {
+	line-height:1.5;
+}
+
+h3 {
+	border-bottom:2px solid #b98951;
+	color:#b98951;
+	margin-bottom:14px;
+	padding-bottom:3px;
+}
+
+.textBox {
+	line-height:1.5;
+	margin-bottom:28px;
+}
+
+/*footer*/
+#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+#socialBtn {
+	margin-bottom:10px;
+	text-align:right;
+}
+
+#copyright {
+	background:url(../img/footer_bg.png);
+	border-top:1px solid #000;
+	color:#fff;
+	font-size:72%;
+	padding:14px 0;
+	text-align:center;
+}
+
+/*top*/
+#viewer {
+	margin:14px auto;
+	height:335px;
+	overflow: hidden;
+	position: relative;
+	width:980px;
+	z-index:5;
+}
+
+#viewer img {
+	top:0;
+	left:0;
+	position:absolute;
+}
+
+#topNews {
+	margin-bottom:28px;
+}
+
+#topAbout,
+#topGreeting {
+	width:476px;
+}
+
+#topNews h2,
+#topAbout h2,
+#topGreeting h2 {
+	border-bottom:2px solid #b98951;
+	color:#b98951;
+	font-size:115%;
+	margin-bottom:14px;
+	padding-bottom:3px;
+}
+
+#topAbout {
+	float:left;
+}
+
+#topGreeting {
+	float:right;
+}
+
+#newsList li {
+	margin-bottom:10px;
+	padding-bottom:5px;
+	border-bottom:1px dotted #bfbfbf;
+}
+
+#newsList li dl dt {
+	float:left;
+	width:150px;
+}
+
+#newsList .new {
+	background:#c00;
+	padding:1px 3px;
+	color:#fff;
+	font-weight:bold;
+	line-height:1;
+	margin-left:7px;
+	font-size:60%;
+	text-align:center;
+}
+
+#greetingPhoto,
+#topAboutLink a {
+	height:190px;
+	margin-bottom:14px;
+	width:476px;
+}
+
+#topAboutLink a {
+	background-position:0 -880px;
+}
+
+#greetingPhoto {
+	background-position:-480px -880px;
+}
+
+/*about*/
+#aboutH2 {
+	background-position:0 -310px;
+}
+
+.textLeftBox {
+	float:left;
+	width:682px;
+}
+
+.textRightBox {
+	float:right;
+	width:284px;
+}
+
+.textRightBox img {
+	border:2px solid #b98951;
+}
+
+/*workshop*/
+#workshopH2 {
+	background-position:0 -500px;
+}
+
+/*album*/
+#albumH2 {
+	background-position:0 -690px;
+}
+
+.photos {
+	margin-bottom:28px;
+}
+
+.photos li {
+	float:left;
+	margin-right:28px;
+	width:224px;
+}
+
+.photos .last {
+	margin-right:0;
+}
+
+/*link*/
+#linksH2 {
+	background-position:0 -120px;
+}
+
+#linkList li {
+	margin-bottom:10px;
+	padding-bottom:5px;
+	border-bottom:1px dotted #bfbfbf;
+}
+
+#linkList li dl dt {
+	float:left;
+	width:120px;
+}
