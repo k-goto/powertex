@@ -256,6 +256,11 @@ h3 {
 	padding-bottom:3px;
 }
 
+#topNews ul#newsList{
+	overflow-y:scroll;
+	height:120px;
+}
+
 #topAbout {
 	float:left;
 }
